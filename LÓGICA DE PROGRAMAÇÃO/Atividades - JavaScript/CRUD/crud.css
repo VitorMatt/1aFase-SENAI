@@ -1,0 +1,48 @@
+div {
+
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+}
+
+body {
+
+    background-color: rgb(69, 112, 255);
+}
+
+button {
+
+    border: solid 1px;
+    border-radius: 6px;
+    padding: 1%;
+    background-color: rgb(134, 162, 245);
+}
+
+input {
+
+    border: solid 1px;
+    border-radius: 6px;
+}
+
+h1,
+label {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+
+    background-color: rgb(73, 73, 248);
+    transition: 0.5s;
+}
+
+input:hover {
+
+    background-color: rgb(223, 223, 223);
+}
+
+#mensagem {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}

@@ -1,0 +1,99 @@
+body {
+
+    background-color: rgb(61, 103, 243);
+    display: block;
+    justify-content: space-evenly;
+}
+
+.container {
+
+    background-color: rgb(196, 33, 33);
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+h2 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.divUm {
+
+    background-color: rgb(163, 208, 250);
+    padding: 1%;
+    align-items: flex-start;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: fit-content;
+    border-radius: 12px;
+    height: 350px;
+
+}
+
+label {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 1%;
+}
+
+select {
+
+    margin-top: 10px;
+    width: 35%;
+    border-radius: 6px;
+    padding: 0.2%;
+    background-color: rgb(255, 59, 59);
+}
+
+.divDois {
+
+    align-items: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: fit-content;
+    height: 100px;
+    border-radius: 12px;
+}
+
+.divTres {
+
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.exibirResultado {
+
+    font-size: 15px;
+}
+
+#checkbox {
+
+    width: 5%;
+}
+
+button {
+
+    background-color: rgb(230, 47, 47);
+    padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    border: solid 1px;
+}
+
+button:hover {
+
+    background-color: rgb(248, 74, 74);
+}

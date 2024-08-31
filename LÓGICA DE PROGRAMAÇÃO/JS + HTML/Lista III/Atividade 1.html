@@ -1,0 +1,72 @@
+<!-- 01) Criar um Quiz (print anexo) com 3 perguntas, cada qual contendo uma resposta correta e as outras incorretas (select). A resposta correta soma 1 ponto, incorreta não. Selecionar a forma na qual será mostrada ALERT, INPUT ou navbar a pontuação (configurar os radios para que o usuário consiga selecionar somente um). Ao clicar no botão de resultado, o resultado (total de pontos) deve ser mostrado da forma escolhida somente se o checkbox estiver marcado, caso contrário, mostrar mensagem para o usuário avisando que deve marcar o checkbox. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Atividade 1.css">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <nav class="container">
+
+        <h2>Quiz</h2>
+
+    </nav>
+
+    <div class="divUm">
+
+        <label for="perguntaUm">Qual o maior páis da Europa?</label>
+
+        <select name="selectUm" id="selectUm">
+
+            <option value="ucrania">Ucrânia</option>
+            <option value="espanha">Espanha</option>
+            <option value="italia">Itália</option>
+
+        </select><br>
+
+        <label for="perguntaDois">Qual a menor unidade de matéria?</label>
+
+        <select name="selectDois" id="selectDois">
+
+            <option value="proton">Próton</option>
+            <option value="eletron">Elétron</option>
+            <option value="atomo">Átomo</option>
+
+        </select><br>
+
+        <label for="perguntaTres">Em que ano o homem foi à lua?</label>
+
+        <select name="selectDois" id="selectTres">
+
+            <option value="1978">1978</option>
+            <option value="1989">1989</option>
+            <option value="1969">1969</option>
+
+        </select><br><br>
+
+        <div class="divTres">
+            <input type="checkbox" id="checkbox">
+            <label class="exibirResultado" for="checkbox">Quero exibir o resultado</label>
+        </div>
+
+    </div>
+
+    <div class="divDois">
+
+        <button type="button" onclick="calcularResultado()">Calcular resultado</button>
+
+        <label>Resultado: </label>
+        <label class="resultado" id="resultado"></label><br>
+
+        <button type="button" onclick="zerarDados()">Jogar novamente</button>
+
+    </div>
+
+    <script src="Atividade 1.js"></script>
+</body>
+</html>

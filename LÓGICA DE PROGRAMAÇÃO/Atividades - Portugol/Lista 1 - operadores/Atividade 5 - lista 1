@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+
+    /*5) Uma feira de livros está fazendo promoção onde na compra de 3 livros, o(a) comprador(a) ganha 15% de desconto. 
+    Criar um programa que receba os valores dos 3 livros e mostra na tela o total dos livros sem desconto e com desconto.*/
+
+    real valorLivroUm, valorLivroDois, valorLivroTres, totalLivros, totalLivrosComDesconto, valorDescontado
+    inteiro desconto = 15
+    escreva ("Digite o valor do primeiro livro: ")
+    leia(valorLivroUm)
+
+    escreva ("Digite o valor do segundo livro: ")
+    leia(valorLivroDois)
+
+    escreva ("Digite o valor do terceiro livro: ")
+    leia(valorLivroTres)
+
+    totalLivros = valorLivroUm + valorLivroDois + valorLivroTres
+
+    
+    valorDescontado = totalLivros*desconto/100
+
+    totalLivrosComDesconto = totalLivros - valorDescontado
+    escreva ("O valor total dos livros é: ", totalLivros, "R$", "\n")
+    escreva ("O valor com desconto ficou: ", totalLivrosComDesconto, "R$")
+    leia(totalLivros)
+    leia(totalLivrosComDesconto)
+    
+  }
+}

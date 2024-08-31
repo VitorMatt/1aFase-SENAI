@@ -1,0 +1,42 @@
+programa {
+  funcao inicio() {
+
+    /*3) Criar um programa para calcular a densidade demográfica (habitantes por quilômetro quadrado) de uma região. 
+    Sendo, densidade igual a população (total de habitantes) dividida pela área (quilômetros quadrados). 
+    Mostrar mensagens para densidade alta (maior ou igual a 100) e densidade baixa (menor que 100).*/
+
+    // Declaração de variáveis
+    
+    real densidadeDemografica
+    real areaRegiao
+    inteiro quantidadePessoas
+    inteiro densidadeIdeal = 100
+
+    // Entrada de dados
+
+    escreva ("Digite a quantidade de pessoas na sua região: ")
+    leia (quantidadePessoas)
+
+    escreva ("Digite a área de sua região (em km²): ")
+    leia (areaRegiao)
+
+    // Cálculos/Lógica
+
+    densidadeDemografica = quantidadePessoas/areaRegiao
+
+    // Saída de dados 
+
+    escreva ("\nA densidade demográfica de sua região é de ", densidadeDemografica, " pessoas por km².\n")
+
+    se (densidadeDemografica>=densidadeIdeal){
+
+      escreva ("A densidade de sua região está alta.")
+
+    }senao{
+
+      escreva ("A densidade de sua região está baixa.")
+
+    }
+    
+  }
+}

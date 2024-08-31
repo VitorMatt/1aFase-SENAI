@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+
+
+  /*2) Na sua lista de compras do mercado, constam apenas 3 itens: arroz, batata palha e um suco de garrafa. 
+  Porém, você possui apenas uma nota de R$100 para pagar. 
+  Faça um programa no qual sejam digitados os valores dos itens e mostre na tela valor que você deve receber (troco).*/
+
+  real precoProdutoUm, precoProdutoDois, precoProdutoTres, valorPago = 100.0, troco
+  escreva ("Preço do arroz: ")
+  leia (precoProdutoUm)
+
+  escreva ("Preço da batata palha: ")
+  leia (precoProdutoDois)
+
+  escreva ("Preço do suco de garrafa: ")
+  leia (precoProdutoTres)
+
+troco = valorPago - precoProdutoUm - precoProdutoDois - precoProdutoTres
+
+escreva ("Você pagou 100 reais e recebeu o troco no valor de ", troco, "R$")
+leia (troco) "\n"
+
+
+    
+  }
+}

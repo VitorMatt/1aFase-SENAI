@@ -1,0 +1,54 @@
+programa {
+  funcao inicio() {
+
+    /*1) Crie um programa que peça ao usuário para digitar três notas individualmente (uma por vez), faça a média e caso a média seja igual ou maior que 7, 
+    mostre uma mensagem "Aprovado!" e a média. Caso seja menor que 7, mostre uma mensagem "Reprovado!" e a média. 
+    (DESAFIO: Incluir também uma opção de "Recuperação" para médias de 5 a 7)*/
+
+    // Declaração de variáveis
+
+    real nota1
+    real nota2
+    real nota3
+    real totalNotas
+    real quantidadeNotasDigitadas = 3
+    real mediaFinal
+
+    // Entrada de dados
+
+   escreva ("Digite a primeira nota: ")
+   leia (nota1)
+
+   escreva ("Digite a segunda nota: ")
+   leia (nota2)
+
+   escreva ("Digite a terceira nota: ")
+   leia (nota3)
+
+   // Cálculos/Lógica
+
+   totalNotas = nota1 + nota2 + nota3
+
+   mediaFinal = totalNotas/quantidadeNotasDigitadas
+
+   // Saída de dados
+
+   se (mediaFinal>=7){
+
+   escreva ("\nSua média final é ", mediaFinal, "!\n\nVocê está aprovado(a)! Sua notas atingiram à média mínima esperada.\n")
+
+   }
+
+   senao se (mediaFinal>=5 e mediaFinal<7) {
+
+   escreva ("\nSua média final é ", mediaFinal, "!\n\nVocê ficou de recuperação, aguarde a avaliação de recuperação para recuperar sua nota.")
+
+   }
+
+   senao {
+   escreva ("\nSua média final é ", mediaFinal, "!\n\nVocê está reprovado(a)! Sua notas não atingiram à média mínima esperada.\n")
+   
+   }
+    
+  }
+}

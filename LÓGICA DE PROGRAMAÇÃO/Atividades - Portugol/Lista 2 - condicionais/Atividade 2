@@ -1,0 +1,54 @@
+programa {
+  funcao inicio() {
+  vacinacao()}
+
+  funcao vacinacao(){
+    
+  /*2) Criar um programa que pergunte o nome e a idade da pessoa, e se tem comorbidade (S ou N). 
+  Mostrar mensagem "Pode se vacinar!" caso a idade seja maior ou igual a 60 ou tenha comorbidade. 
+  Caso contrário, mostrar mensagem "Não pode se vacinar!".*/
+
+  cadeia nomePessoa
+  inteiro idadePessoa
+  cadeia comorbidadeResposta
+  inteiro idadeMinimaVacina = 60
+
+  escreva ("Bom dia! Quer se vacinar? verifique conosco sua elegibilidade.\nInforme-nos as informações abaixo;")
+  
+  escreva ("\n\nNome: ")
+  leia (nomePessoa)
+
+  escreva ("\nIdade: ")
+  leia (idadePessoa)
+
+  escreva ("\nTem comorbidade? ")
+  leia (comorbidadeResposta)
+
+
+  se(idadePessoa>120){
+
+  escreva ("\n\nNúmero inválido! Por favor digite novamente.\n\n")
+  vacinacao()}
+
+  senao { se (idadePessoa<0){
+
+  escreva ("\n\nNúmero inválido! Por favor digite novamente.\n\n")
+  vacinacao()
+
+  }
+  
+  senao{ se (idadePessoa>=idadeMinimaVacina ou comorbidadeResposta=="sim" ou comorbidadeResposta=="Sim"){
+
+  escreva ("\n\n", nomePessoa, ", você está dentro das condições. Já pode se vacinar!")
+  }
+
+  senao{ se(idadePessoa<60 e comorbidadeResposta=="não" ou comorbidadeResposta=="Não"){
+
+  escreva ("\n\n", nomePessoa, ", infelizmente você não tem as condições necessárias para se vacinar!\nEspere até que chegue sua vez.")
+
+  }
+  }
+  }
+  }
+  }
+}

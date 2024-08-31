@@ -1,0 +1,38 @@
+Atividade (Descrição Narrativa)
+
+1) Trocar uma lâmpada.
+
+1. Obter uma lâmpada nova para realizar a troca.
+2. Tomar cuidado com a eletricidade, desligar o interruptor e, se for preciso, desligar o disjuntor por segurança.
+3. Se preciso, utilizar um banco ou uma cadeira para alcançar a altura da lâmpada.
+4. Retirar a lâmpada antiga, desenroscando-a lentamente.
+5. Com a nova lâmpada em mãos, colocá-la no lugar da antiga, enroscando-a lentamente novamente.
+6. Ligar o disjuntor se ele tiver sido desligado.
+7. E então ligar o interruptor para testar se a lâmpada está funcionando normalmente e com qualidade.
+
+2) Trocar um pneu
+
+1. Obter um novo pneu para realizar a troca.
+2. Verificar se o pneu está furado ou com algum problema que impossibilita o uso. Se ele estiver, trocar por outro pneu para realizar a troca de forma segura.
+3. Utilizar o macaco para levantar o carro e facilitar a troca.
+4. Utilizar uma chave de roda para desparafusar o pneu velho.
+5. Inserir o novo pneu.
+6. Parafusá-lo com a chave de roda.
+7. Retirar o macaco do carro.
+8. Testar o pneu para ver se o funcionamento está correto.
+
+3) Tomar banho
+
+1. Utilizar o banheiro de sua casa (ou o lugar no qual estiver).
+2. Retirar as roupas e colocá-las no cesto de roupas.
+3. Entrar no box ou no espaço em que você utiliza o chuveiro.
+4. Ligar o chuveiro.
+5. Lavar todas as partes do corpo com um sabonete.
+6. Lavar o cabelo com shampoo e condicionador.
+7. Utilizar creme de cabelo se quiser (preferência individual).
+8. Desligar o chuveiro.
+9. Vestir as roupas escolhidas para vestir após o banho.
+
+
+
+

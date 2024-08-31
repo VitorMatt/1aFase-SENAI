@@ -1,0 +1,118 @@
+programa {
+  funcao inicio() {
+    login()}
+
+    funcao login(){
+
+    cadeia nomeUsuario
+    inteiro idadeUsuario
+    cadeia cpfUsuario
+    cadeia emailUsuario
+    cadeia senhaUsuario
+    cadeia emailDigitado
+    cadeia senhaDigitada
+    cadeia confirmacaoSenhaDigitada
+    cadeia respostaUsuario
+
+    escreva ("\nOlá, bem-vindo ao nosso web site. Venha conhecer um pouco mais sobre nós!\n")
+    escreva ("É novo por aqui\n")
+    leia (respostaUsuario)
+
+    se (respostaUsuario=="Não" ou respostaUsuario=="não"){
+
+    escreva ("\nInsira seu nome: ")
+    leia (nomeUsuario)
+
+    escreva ("Insira seu email: ")
+    leia (emailDigitado)
+
+    escreva ("Insira sua senha: ")
+    leia (senhaDigitada)
+
+    escreva ("Confirme a sua senha: ")
+    leia (confirmacaoSenhaDigitada)
+
+    se (senhaDigitada==confirmacaoSenhaDigitada){
+
+    escreva ("\nBem-vindo(a) de volta, ", nomeUsuario, ":)")
+    }
+    senao{ se (senhaDigitada!=confirmacaoSenhaDigitada){
+
+    escreva ("\nAs senhas devem ser iguais! Por favor tente novamente\n")
+    login()}
+    }
+    }
+
+    se (respostaUsuario!= "sim" e respostaUsuario!= "Sim" e respostaUsuario!= "não" e respostaUsuario!= "Não"){
+
+    escreva ("\nDigite uma resposta válida! Por favor digite novamente.\n")
+    login()}
+
+    senao{ se (respostaUsuario=="Sim" ou respostaUsuario=="sim"){
+
+    escreva ("\nCadastre-se agora! Preencha as informações abaixo:")
+
+    escreva ("\n\nNome: ")
+    leia (nomeUsuario)
+
+    escreva ("Idade: ")
+    leia (idadeUsuario)
+
+    escreva ("CPF: ")
+    leia (cpfUsuario)
+
+    escreva ("Email: ")
+    leia (emailUsuario)
+
+    escreva ("Crie uma senha: ")
+    leia (senhaUsuario)
+
+    escreva ("Confirme sua senha: ")
+    leia (confirmacaoSenhaDigitada)
+
+    se (senhaUsuario!=confirmacaoSenhaDigitada){
+
+    escreva ("\nAs senhas devem ser iguais! Por favor tente novamente")
+    
+    }
+      
+    se (senhaUsuario==confirmacaoSenhaDigitada){
+    
+    escreva ("\nFaça login e entre na sua conta!")
+    
+    escreva ("\nInsira seu email: ")
+    leia (emailDigitado)
+
+    escreva ("Insira sua senha: ")
+    leia (senhaDigitada)
+    }
+
+    se (emailDigitado!=emailUsuario e senhaDigitada!=senhaUsuario){
+
+    escreva ("\nSenha ou email incorretos, por favor tente novamente.\n")
+
+    }
+
+    senao{ se (emailDigitado!=emailUsuario){
+
+    escreva ("\nLogin não encontrado, por favor digite novamente.\n")
+    } 
+
+    senao{ se (senhaDigitada!=senhaUsuario){
+
+    escreva ("\n\nSenha incorreta, por favor digite novamente.\n")
+
+    }
+
+    senao{ se (emailDigitado==emailUsuario e senhaDigitada==senhaUsuario){
+    
+    escreva ("\nBem-vindo(a), ", nomeUsuario, ":)")
+
+    }
+    }
+    }
+    }
+    }
+    }
+  }
+}

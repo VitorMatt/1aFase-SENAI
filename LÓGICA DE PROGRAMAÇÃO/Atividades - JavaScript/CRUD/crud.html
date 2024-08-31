@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>Crud</title>
+</head>
+<body>
+
+    <div>
+
+        <h1>CRUD de usuário</h1><br>
+
+        <label for="nomeUsuario">Nome de usuário</label><br>
+        <input type="text" id="nomeUsuario"><br><br>
+
+        <button type="button" onclick="cadastrar()"><b>Cadastrar</b></button>
+        <button type="button" onclick="editar()"><b>Editar</b></button>
+        <button type="button" onclick="excluir()"><b>Excluir</b></button>
+        <button type="button" onclick="listar()"><b>Listar</b></button><br><br>
+
+        <label id="mensagem">Nenhum usuário cadastrado.</label>
+
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+</html>

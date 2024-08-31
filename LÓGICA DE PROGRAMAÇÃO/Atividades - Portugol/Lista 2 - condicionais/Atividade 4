@@ -1,0 +1,90 @@
+programa {
+  funcao inicio() {
+
+    /*4) Desenvolva um programa no qual o usuário deve digitar o nome e a idade de 5 pessoas. 
+    Ao final mostrar a média de idade delas e a maior idade dentre essas pessoas. 
+    (DESAFIO: Mostrar também o nome da pessoa com a maior idade).*/
+
+    cadeia nomePessoaUm, nomePessoaDois, nomePessoaTres, nomePessoaQuatro, nomePessoaCinco
+    inteiro numeroPessoas = 5
+    inteiro idadePessoaUm, idadePessoaDois, idadePessoaTres, idadePessoaQuatro, idadePessoaCinco
+    inteiro somaTotalIdadePessoas
+    real mediaIdadePessoas
+
+    escreva ("Digite o nome da primeira pessoa: ")
+    leia (nomePessoaUm)
+
+    escreva ("Digite o nome da segunda pessoa: ")
+    leia (nomePessoaDois)
+
+    escreva ("Digite o nome da terceira pessoa: ")
+    leia (nomePessoaTres)
+
+    escreva ("Digite o nome da quarta pessoa: ")
+    leia (nomePessoaQuatro)
+
+    escreva ("Digite o nome da quinta pessoa: ")
+    leia (nomePessoaCinco)
+
+    escreva ("\nDigite a idade de ", nomePessoaUm, ": ")
+    leia (idadePessoaUm)
+
+    escreva ("Digite a idade de ", nomePessoaDois, ": ")
+    leia (idadePessoaDois)
+
+    escreva ("Digite a idade de ", nomePessoaTres, ": ")
+    leia (idadePessoaTres)
+
+    escreva ("Digite a idade de ", nomePessoaQuatro, ": ")
+    leia (idadePessoaQuatro)
+
+    escreva ("Digite a idade de ", nomePessoaCinco, ": ")
+    leia (idadePessoaCinco)
+
+    somaTotalIdadePessoas = idadePessoaUm + idadePessoaDois + idadePessoaTres + idadePessoaQuatro + idadePessoaCinco
+    mediaIdadePessoas = somaTotalIdadePessoas / numeroPessoas
+
+    se (idadePessoaUm>idadePessoaDois e idadePessoaUm>idadePessoaTres e idadePessoaUm>idadePessoaQuatro e idadePessoaUm>idadePessoaCinco){
+
+    escreva ("\n\nA média de idade de ", nomePessoaUm, ", ", nomePessoaDois, ", ", nomePessoaTres, ", ", nomePessoaQuatro, " e ", nomePessoaCinco, " é de ", mediaIdadePessoas, " anos de idade.")
+
+    escreva ("\n", nomePessoaUm, " é a pessoa mais velha do grupo.")
+    }
+
+    senao{ se (idadePessoaDois>idadePessoaUm e idadePessoaDois>idadePessoaTres e idadePessoaDois>idadePessoaQuatro e idadePessoaDois>idadePessoaCinco){
+
+    escreva ("\n\nA média de idade de ", nomePessoaUm, ", ", nomePessoaDois, ", ", nomePessoaTres, ", ", nomePessoaQuatro, " e ", nomePessoaCinco, " é de ", mediaIdadePessoas, " anos de idade.")
+
+    escreva ("\n", nomePessoaDois, " é a pessoa mais velha do grupo.")
+    
+    }
+
+    senao{ se (idadePessoaTres>idadePessoaUm e idadePessoaTres>idadePessoaDois e idadePessoaTres>idadePessoaQuatro e idadePessoaTres>idadePessoaCinco){
+
+    escreva ("\n\nA média de idade de ", nomePessoaUm, ", ", nomePessoaDois, ", ", nomePessoaTres, ", ", nomePessoaQuatro, " e ", nomePessoaCinco, " é de ", mediaIdadePessoas, " anos de idade.")
+
+    escreva ("\n", nomePessoaTres, " é a pessoa mais velha do grupo.")
+
+    }
+
+    senao{ se (idadePessoaQuatro>idadePessoaUm e idadePessoaQuatro>idadePessoaDois e idadePessoaQuatro>idadePessoaTres e idadePessoaQuatro>idadePessoaCinco){
+
+    escreva ("\n\nA média de idade de ", nomePessoaUm, ", ", nomePessoaDois, ", ", nomePessoaTres, ", ", nomePessoaQuatro, " e ", nomePessoaCinco, " é de ", mediaIdadePessoas, " anos de idade.")
+
+    escreva ("\n", nomePessoaQuatro, " é a pessoa mais velha do grupo.")
+
+    }
+    
+    senao { se (idadePessoaCinco>idadePessoaUm e idadePessoaCinco>idadePessoaDois e idadePessoaCinco>idadePessoaTres e idadePessoaCinco>idadePessoaQuatro){
+
+    escreva ("\n\nA média de idade de ", nomePessoaUm, ", ", nomePessoaDois, ", ", nomePessoaTres, ", ", nomePessoaQuatro, " e ", nomePessoaCinco, " é de ", mediaIdadePessoas, " anos de idade.")
+
+    escreva ("\n", nomePessoaCinco, " é a pessoa mais velha do grupo.")
+
+    }
+    }
+    }
+    }
+    }  
+  }
+}

@@ -1,0 +1,52 @@
+programa {
+  funcao inicio() {
+  semaforo()}
+
+  funcao semaforo(){
+
+    /*1) Faça um programa no qual o usuário digite a cor que está no semáforo (verde, amarelo, vermelho). 
+    Caso seja digitado verde, mostre na tela "Pode seguir!", se for digitado amarelo, mostre "Alerta, pare!" e se for digitado vermelho, mostre "Pare imediatamente!".*/
+
+    inteiro corVerde = 1
+    inteiro corAmarelo = 2
+    inteiro corVermelho = 3
+    inteiro respostaUsuario
+
+    escreva ("\nQual a cor apresentada no semáforo?")
+    
+    escreva ("\n\n1 - Verde")
+    escreva ("\n2 - Amarelo")
+    escreva ("\n3 - Vermelho")
+
+    escreva ("\n\nDigite o número de acordo com a tabela: ")
+    leia (respostaUsuario)
+    
+
+    se (respostaUsuario==corVerde){
+
+    escreva ("\nPode seguir, boa viagem!")
+
+    }
+
+    senao{ se (respostaUsuario==corAmarelo){
+
+    escreva ("\nAlerta, pare!")
+
+    }
+
+    senao{ se (respostaUsuario==corVermelho){
+
+    escreva ("\nPare imediatamente!")
+
+    }
+    
+    senao{
+
+    escreva ("\nDigite um número válido! Por favor, digite novamente.\n")
+    semaforo()
+    
+    }
+    }
+    }
+  }
+}

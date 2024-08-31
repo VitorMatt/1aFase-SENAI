@@ -1,0 +1,42 @@
+programa {
+  funcao inicio() {
+     /*3) Uma pousada cobra R$280 reais a diária por quarto e R$15 reais o café por pessoa por dia. 
+    Você pretende passar um tempo com alguns amigos nessa pousada, sendo que todos ficarão no mesmo quarto. 
+    Informar a quantidade de pessoas, o número de diárias e quantas pessoas do grupo vão querer café diário. Mostrar na tela o total a pagar.*/
+
+    //Definição de variáveis
+
+    inteiro valorDiariaPorQuarto = 280, valorCafePorPessoaPorDia = 15
+    inteiro quantidadePessoas, numeroDiarias, quantidadePessoasCafe
+    inteiro valorTotalDiarias, valorTotalCafe, valorTotal
+
+    //Entrada de dados
+
+    escreva ("Digite a quantidade de pessoas que irão para a pousada: ")
+    leia(quantidadePessoas)
+    
+    escreva ("Digite a quantidade de dias que ficarão na pousada: ")
+    leia (numeroDiarias)
+
+    escreva ("Digite o número de pessoas que irão querer café: ")
+    leia (quantidadePessoasCafe)
+
+   //Cálculo
+
+   valorTotalDiarias = numeroDiarias*valorDiariaPorQuarto
+   valorTotalCafe = valorCafePorPessoaPorDia*quantidadePessoasCafe*numeroDiarias
+   valorTotal = valorTotalDiarias + valorTotalCafe
+
+   //Saída de dados
+
+   escreva ("\nQuantidade de pessoas na pousada: ", quantidadePessoas, " pessoas.\n")
+   escreva ("Quantidade de diárias selecionadas: ", numeroDiarias, " diárias.\n")
+   escreva ("Quantidade de pessoas que vão querer café: ", quantidadePessoasCafe, " pessoas.\n")
+   escreva ("\nValor total diárias: ", valorTotalDiarias, " R$.")
+   escreva ("\nValor total café: ", valorTotalCafe, " R$.")
+   escreva ("\nValor total a pagar: ", valorTotal, " R$.")
+   leia (valorTotalDiarias)
+   leia (valorTotalCafe)
+   leia (valorTotal)
+  }
+}

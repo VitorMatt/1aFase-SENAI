@@ -1,0 +1,68 @@
+programa {
+  funcao inicio() {
+    classificacoesExtincao()}
+
+    funcao classificacoesExtincao(){
+
+    /*1) Elaborar um programa que alerte sobre os riscos de animais em extinção. 
+    O usuário deve digitar o nome da espécie e a sua população (total de indivíduos). 
+    Populações entre 200 e 500 indivíduos, são classificadas como "Espécie criticamente em perigo",
+    populações entre 500 e 1000 indivíduos, são classificadas como "Espécie em perigo" e populações entre 1000 e 5000 indivíduos, 
+    são classificadas como "Espécie vulnerável!" */
+
+    cadeia especieAnimal
+    cadeia populacaoAnimal
+    inteiro limiteMinimoPerigoCritico = 200
+    inteiro limiteMaximoPerigoCritico = 500
+    inteiro limiteMinimoPerigo = 500
+    inteiro limiteMaximoPerigo = 1000
+    inteiro limiteMinimoVulneravel = 1000
+    inteiro limiteMaximoVulneravel = 5000
+
+    escreva ("Digite a espécie do animal: ")
+    leia (especieAnimal)
+
+    escreva ("Digite a população desta espécie: ")
+    leia (populacaoAnimal)
+
+    se (populacaoAnimal>=limiteMinimoPerigoCritico e populacaoAnimal<limiteMaximoPerigoCritico){
+
+    escreva ("\nA espécie '", especieAnimal, "' está criticamente em perigo de extinção.")}
+
+    senao{ 
+      
+    se (populacaoAnimal>=limiteMinimoPerigo e populacaoAnimal<limiteMaximoPerigo){
+
+    escreva ("\nA espécie '", especieAnimal, "' está em perigo de extinção.")
+
+    }
+
+    senao{ 
+    
+    se (populacaoAnimal>=limiteMinimoVulneravel e populacaoAnimal<limiteMaximoVulneravel){
+
+    escreva ("\nA espécie '", especieAnimal, "' está vulnerável à extinção.")
+
+    }
+
+    senao{
+
+    se (populacaoAnimal<limiteMinimoPerigoCritico){
+
+    escreva ("\nEsta informação não parece correta... Por favor, digite um número de acordo com as classificações!\n\n")
+    classificacoesExtincao()
+    }
+
+    senao{
+
+    se (populacaoAnimal>=limiteMaximoVulneravel){
+
+    escreva ("\nA espécie '", especieAnimal, "' não está em risco de extinção.\n\n")
+    }
+    }
+    }
+    }
+    }
+
+  }
+}

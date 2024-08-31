@@ -1,0 +1,73 @@
+programa {
+  funcao inicio() {
+
+  /*3) Elabore um programa que leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou nao se aposentar. 
+  As condições para aposentadoria são:
+  a) Ter pelo menos 65 anos
+  b) Ter trabalhado pelo menos 30 anos
+  c) Ter pelo menos 60 anos e ter trabalhado pelo menos 25 anos*/
+
+  real tempoServicoUsuario
+  inteiro idadeUsuario
+  inteiro tempoServicoMinimoAposentadoriaPorTempo = 30
+  inteiro idadeMinimaAposentadoriaPorIdade = 65
+  inteiro idadeMinimaAposentadoriaPorTempoEIdade = 60
+  inteiro tempoServicoMinimoAposentadoriaPorTempoEIdade = 25
+
+  escreva ("\nSaiba se você já pode se aposentar! Responda as questões abaixo.")
+
+  escreva ("\nQual sua idade?\nResposta: ")
+  leia (idadeUsuario)
+
+  se (idadeUsuario>120){
+
+  escreva ("\nPor favor, digite um número válido!\n")
+  inicio()
+
+  }
+  senao{ se (idadeUsuario<=0){
+
+  escreva ("\nPor favor, digite um número válido!\n")
+  inicio()
+
+  }
+  }
+
+  escreva ("\nQuanto anos trabalhados você tem ao todo?\nResposta: ")
+  leia (tempoServicoUsuario)
+
+  se (tempoServicoUsuario>90){
+
+  escreva ("\nPor favor, digite um número válido!\n")
+  inicio()
+
+  }
+  senao{ se (tempoServicoUsuario<=0){
+
+  escreva ("\nPor favor, digite um número válido!\n")
+  inicio()
+
+  }
+  }
+
+  se (idadeUsuario>=idadeMinimaAposentadoriaPorIdade ou tempoServicoUsuario>=tempoServicoMinimoAposentadoriaPorTempo){
+  
+  escreva ("\nÓtimas notícias! Você já pode se aposentar.")
+
+  }
+
+  senao{ se (idadeUsuario>=idadeMinimaAposentadoriaPorTempoEIdade e tempoServicoUsuario>=tempoServicoMinimoAposentadoriaPorTempoEIdade){
+
+  escreva ("\nÓtimas notícias! Você já pode se aposentar.")
+
+  }
+
+  senao{ se (idadeUsuario<idadeMinimaAposentadoriaPorTempoEIdade ou tempoServicoUsuario<tempoServicoMinimoAposentadoriaPorTempoEIdade){
+
+  escreva ("\nMás notícias! Infelizmente você ainda não pode se aposentar.")
+
+  }
+  }
+  }
+  }
+}

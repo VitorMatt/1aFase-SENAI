@@ -1,0 +1,105 @@
+programa {
+  funcao inicio() {
+
+    /*4) Faça um programa do qual o usuário digite quatro números e ao final mostre o maior número, o menor número, e a soma dos outros dois números 
+    (que não são o maior nem o menor). 
+    (DESAFIO: Caso existam números repetidos digitados, após o usuário digitar os quatro números, 
+    não mostrar maior, menor nem soma, mas uma mensagem "Você digitou números repetidos".)*/
+
+    real numeroUm, numeroDois, numeroTres, numeroQuatro
+    real somaNumeros
+    real numeroMaior
+    real numeroMenor
+    real somaNumerosDoMeio 
+
+    escreva("\nDigite o primeiro número: ")
+    leia(numeroUm)
+
+    numeroMaior = numeroUm
+    numeroMenor = numeroUm
+
+    escreva("Digite o segundo número: ")
+    leia(numeroDois)
+
+    se (numeroDois>numeroMaior){
+
+    numeroMaior = numeroDois
+
+    }
+
+    se (numeroDois<numeroMenor){
+
+    numeroMenor = numeroDois
+
+    }
+
+    se (numeroDois==numeroUm){
+
+    escreva ("\nVocê digitou números iguais! Por favor digite números com valores diferentes\n")
+    inicio()
+    
+    }
+
+    senao{
+
+    escreva("Digite o terceiro número: ")
+    leia(numeroTres)
+
+    se (numeroTres>numeroMaior){
+
+    numeroMaior = numeroTres
+
+    }
+
+    se (numeroTres<numeroMenor){
+
+    numeroMenor = numeroTres
+
+    }
+
+    se (numeroTres==numeroUm ou numeroTres==numeroDois){
+
+    escreva ("\nVocê digitou números iguais! Por favor digite números com valores diferentes\n")
+    inicio()
+    
+    }
+
+    senao{
+
+    escreva("Digite o quarto número: ")
+    leia(numeroQuatro)
+
+    se (numeroQuatro>numeroMaior){
+
+    numeroMaior = numeroQuatro
+
+    }
+
+    se (numeroQuatro<numeroMenor){
+
+    numeroMenor = numeroQuatro
+
+    }
+
+    se (numeroQuatro==numeroUm ou numeroQuatro==numeroDois ou numeroQuatro==numeroTres){
+
+    escreva ("\nVocê digitou números iguais! Por favor digite números com valores diferentes\n")
+    inicio()
+    
+    }
+
+    senao{ 
+
+    somaNumeros = numeroUm + numeroDois + numeroTres + numeroQuatro
+
+    somaNumerosDoMeio = somaNumeros - (numeroMaior + numeroMenor)
+
+    }
+    }
+    }
+
+    escreva ("\nNúmero maior: ", numeroMaior, ".\nNúmero menor: ", numeroMenor, ".")
+    escreva ("\nSoma dos números do meio: ", somaNumerosDoMeio, ".")
+
+  }
+}

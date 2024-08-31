@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+
+    /*3) Na volta as aulas cada aluno(a) ganhará 2 bombons (1 para si e 1 para os pais), além de 1 bombom para o(a) professor(a). 
+    Faça um programa no qual seja digitado a quantidade de alunos da turma e mostrando quantos bombons no total devem ser comprados.*/
+
+    inteiro numeroAlunos, numeroPais, numeroProfessor = 1, bombonsPorAluno, numeroBombons
+
+    escreva ("Digite o número de alunos: ")
+    leia (numeroAlunos)
+
+    escreva ("Digite o número de bombons por aluno: ")
+    leia (bombonsPorAluno)
+
+    numeroBombons = numeroAlunos*bombonsPorAluno + numeroProfessor
+
+
+    escreva ("A quantidade de alunos é: ", numeroAlunos, "\n", "A quantidade de bombons é: ", numeroBombons)
+    leia(numeroBombons)
+  }
+}

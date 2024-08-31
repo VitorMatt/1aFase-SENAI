@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+
+    /*2) Um festival de música está terceirizando a montagem da estrutura. 
+    A empresa contratada necessita saber uma estimativa de público para calcular a quantidade de bares e banheiros. O cálculo utilizado é de 1 banheiro para cada 50 pessoas e 1 bar para cada 150 pessoas. 
+    Criar um programa onde seja digitado o público esperado e mostrar na tela em média quantos banheiros e bares seriam necessários.*/
+
+    //Definição de variáveis
+
+    inteiro estimativaPublico, quantidadeBares, quantidadeBanheiros
+    inteiro pessoasPorBanheiro = 50, pessoasPorBar = 150
+
+    //Entrada de dados
+
+    escreva ("Digite a quantidade de pessoas estimadas: ")
+    leia (estimativaPublico)
+
+    //Cálculo
+
+    quantidadeBares = estimativaPublico/pessoasPorBar
+
+    quantidadeBanheiros = estimativaPublico/pessoasPorBanheiro
+
+    //Saída de dados
+
+    escreva ("Será necessário ", quantidadeBanheiros, " banheiros e ", quantidadeBares, " bares para seu evento.")
+    leia(quantidadeBanheiros)
+    leia(quantidadeBares)
+
+
+  }
+}

@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+
+    /*1) Criar um programa que receba o nome, idade e endereço de uma pessoa e mostre na tela esses dados.*/
+
+    cadeia nomePessoa, idadePessoa, enderecoPessoa
+
+    escreva("Digite seu nome: ")
+    leia(nomePessoa)
+
+    escreva("Digite sua idade: ")
+    leia(idadePessoa)
+
+    escreva("Digite seu endereco: ")
+    leia(enderecoPessoa)
+
+    escreva("\n", "Informações do usuário: ", "\n")
+
+    escreva("Nome: ", nomePessoa, "\n")
+    escreva("Idade: ", idadePessoa, "\n")
+    escreva("Endereço: ", enderecoPessoa, "\n")
+    
+
+
+
+  }
+}

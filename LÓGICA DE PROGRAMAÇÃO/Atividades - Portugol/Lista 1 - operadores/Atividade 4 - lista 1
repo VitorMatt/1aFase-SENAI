@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+
+    /*4) Um(a) programador(a) deseja, ao final do mês, saber quantas horas por semana em média estudou programação. 
+    Crie um programa no qual seja digitado a quantidade de horas de cada semana do mês e no final mostre a média de horas por semana naquele mês.*/
+
+    real horasSemanaUm, horasSemanaDois, horasSemanaTres, horasSemanaQuatro, totalHoras, horasPorSemana
+
+    escreva ("A quantidade de horas que você trabalhou na primeira semana: ")
+    leia (horasSemanaUm)
+
+    escreva ("A quantidade de horas que você trabalhou na segunda semana: ")
+    leia (horasSemanaDois)
+
+    escreva ("A quantidade de horas que você trabalhou na terceira semana: ")
+    leia (horasSemanaTres)
+
+    escreva ("A quantidade de horas que você trabalhou na quarta semana: ")
+    leia (horasSemanaQuatro)
+
+    totalHoras = horasSemanaUm + horasSemanaDois + horasSemanaTres + horasSemanaQuatro 
+
+    horasPorSemana = totalHoras/4
+
+    escreva ("A sua média de horas semanais é: ", horasPorSemana)
+    leia (horasPorSemana)
+
+
+    
+  }
+}

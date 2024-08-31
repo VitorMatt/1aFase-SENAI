@@ -1,0 +1,58 @@
+programa {
+  funcao inicio() {
+
+    /*5) Criar um programa no qual o usuário digite o motivo da sua saída em uma empresa e o valor do seus FGTS. 
+    Para motivo "Justa causa" o valor a receber é o valor do FGTS somado a uma multa de R$4.000,00. Para motivo 
+    "Sem justa causa" o valor a receber é o valor do FGTS com desconto de 15%. 
+    Ao final mostrar o valor a receber.*/
+
+    cadeia motivoSaidaEmpresaUsuario
+    real valorFgts
+    real valorAReceber
+    real valorDescontado 
+    inteiro valorMulta = 4000
+    inteiro desconto = 15
+
+    escreva ("\nOlá! Para saber seu valor a receber, siga as instruções abaixo: ")
+    escreva ("\nDigite o valor do seu FGTS: ")
+    leia (valorFgts)
+
+    se (valorFgts<96 ou valorFgts>1000000){
+
+    escreva ("\nValor inválido! Por favor tente novamente.\n")
+    inicio()
+    }
+
+    senao{
+
+    escreva ("\nO motivo de sua saída da empresa foi por justa causa?\nResposta: ")
+    leia (motivoSaidaEmpresaUsuario)
+
+    se (motivoSaidaEmpresaUsuario=="sim" ou motivoSaidaEmpresaUsuario=="Sim"){
+
+    valorAReceber = valorFgts + valorMulta
+
+    escreva ("\nVocê tem um total de R$ ", valorAReceber, " para receber.\n")
+
+    }
+
+    senao{ se (motivoSaidaEmpresaUsuario=="não" ou motivoSaidaEmpresaUsuario=="Não"){
+
+    valorDescontado = (valorFgts*desconto)/100
+    
+    valorAReceber = valorFgts - valorDescontado
+
+    escreva ("\nVocê tem um total de R$ ", valorAReceber, " para receber.\n")
+
+    }
+
+    senao{
+
+    escreva ("\nDigite uma resposta válida! Por favor, tente novamente.\n")
+    inicio()
+
+    }
+    }
+    }
+  }
+}
